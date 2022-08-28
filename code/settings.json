@@ -1,0 +1,37 @@
+{
+    "vim.useSystemClipboard": true,
+    "vim.highlightedyank.color": "rgba(250, 120, 240, 0.5)",
+    "vim.highlightedyank.duration": 80,
+    "vim.highlightedyank.enable": true,
+    "vim.smartRelativeLine": true,
+    "vim.smartcase": true,
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "$HOME/.config/code/.vimrc",
+
+    "emmet.excludeLanguages": [ "typescriptreact" ],
+
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "off",
+    // "editor.renderLineHighlight": "none",
+    // "editor.guides.indentation": false,
+    // "editor.guides.highlightActiveIndentation": "always",
+    "files.autoSaveDelay": 200,
+    "workbench.colorCustomizations": {
+        // "editorIndentGuide.activeBackground": "#ffffff",
+        "editorIndentGuide.background": "#00000000"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.currentLine.enabled": true,
+    "togglequotes.chars": [
+        "\"",
+        "'",
+        "`",
+    ],
+    "files.autoSave": "afterDelay",
+    "projectManager.git.baseFolders": [
+        "/halter/"
+    ]
+}
