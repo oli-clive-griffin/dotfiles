@@ -1,0 +1,162 @@
+{
+    "vim.useSystemClipboard": true,
+    "vim.highlightedyank.color": "rgba(256, 120, 240, 0.5)",
+    "vim.highlightedyank.duration": 80,
+    "vim.highlightedyank.enable": true,
+    "vim.smartRelativeLine": true,
+    "vim.smartcase": true,
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "$HOME/.config/code/.vimrc",
+    "emmet.excludeLanguages": [
+        "typescriptreact"
+    ],
+    "editor.wordWrap": "off",
+    "editor.stickyScroll.enabled": true,
+    "editor.cursorSurroundingLines": 10,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "workbench.colorCustomizations": {
+        "editorIndentGuide.background1": "#ffffff24"
+    },
+    "files.autoSaveDelay": 1000,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.currentLine.enabled": true,
+    // "editor.fontFamily": "URW Chancery L, cursive",
+    // "editor.fontSize": 18,
+    // "editor.letterSpacing": 1.5,
+    "redhat.telemetry.enabled": false,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "yaml": false,
+        "rust": true,
+        "typescript": true,
+        "python": true,
+        "typescriptreact": true,
+        "c": false
+    },
+    "terminal.integrated.scrollback": 1000000000,
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+    ],
+    "editor.inlineSuggest.enabled": true,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.logToConsole",
+            "sequence": [
+                "editor.action.clipboardCopyAction",
+                // this jumps out of an object/array - sometimes useful but sometimes not
+                // "editor.action.jumpToBracket",
+                "editor.action.insertLineAfter",
+                {
+                    "command": "editor.action.insertSnippet",
+                    "args": {
+                        "snippet": "console.log('$CLIPBOARD:', $CLIPBOARD);"
+                    }
+                },
+            ]
+        },
+        {
+            "command": "multiCommand.JSONLogToConsole",
+            "sequence": [
+                "editor.action.clipboardCopyAction",
+                "editor.action.insertLineAfter",
+                {
+                    "command": "editor.action.insertSnippet",
+                    "args": {
+                        "snippet": "console.log('$CLIPBOARD:', JSON.stringify($CLIPBOARD, null, 2));"
+                    }
+                },
+            ]
+        },
+        {
+            "command": "multiCommand.splitAndGoToDefinition",
+            "sequence": [
+                "workbench.action.splitEditor",
+                "editor.action.goToDeclaration"
+            ]
+        }
+    ],
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.indentSize": 4
+    },
+    "jupyter.askForKernelRestart": false,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescript]": { },
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "workbench.startupEditor": "none",
+    "workbench.editor.enablePreview": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.enabled": false,
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "files.insertFinalNewline": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "python.languageServer": "Pylance",
+    "workbench.activityBar.location": "top",
+    "window.commandCenter": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "githubPullRequests.pullBranch": "never",
+    "gitlens.graph.minimap.enabled": false,
+    "git.confirmSync": false,
+    "hexeditor.columnWidth": 16,
+    "hexeditor.showDecodedText": true,
+    "hexeditor.defaultEndianness": "little",
+    "hexeditor.inspectorType": "aside",
+    "files.autoSave": "afterDelay",
+}
